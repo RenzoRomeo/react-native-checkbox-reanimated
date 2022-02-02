@@ -22,7 +22,7 @@ const AnimatedStroke = ({ progress, ...pathProps }: AnimatedStrokeProps) => {
     <AnimatedPath
       animatedProps={animatedProps}
       // @ts-ignore
-      onLayout={() => setLength(ref.current!.getTotalLength())}
+      onLayout={() => setLength(ref.current.getTotalLength())}
       // @ts-ignore
       ref={ref}
       strokeDasharray={length}
