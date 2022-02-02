@@ -19,14 +19,7 @@ const outlineBoxPath =
 
 const AnimatedPath = Animated.createAnimatedComponent(Path)
 
-interface Props {
-  checked?: boolean
-  highlightColor: string
-  checkmarkColor: string
-  boxOutlineColor: string
-}
-
-const AnimatedCheckbox = (props: Props) => {
+const AnimatedCheckbox = (props) => {
   const { checked, checkmarkColor, highlightColor, boxOutlineColor } = props
 
   const progress = useSharedValue(0)
